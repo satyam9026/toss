@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOSS KING</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&amp;family=Oswald:wght@700&amp;display=swap" rel="stylesheet">
+  <link href="css/all.min.css" rel="stylesheet">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '691991776510979');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=691991776510979&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+  <div class="hero">
+    <div class="profile-picture">
+      <img style="margin-top: -20px; height: 100px; width: 100px;" src="image.png" alt="cricket">
+    </div>
+   
+    <div class="content">
+      <h1 class="heading1">👑TOSS KING👑</h1>
+      <div class="subscriber-counter">
+        <p id="subscriber-count" style="margin: 18px ;font-size: 25px;font-weight: bold; color: white;"><b>74,028  Subscribers</b></p>
+      </div>
+    </div>
+    
+    <br>
+    <div style="margin: 0px 15px; margin-top: -40px;" class="button">
+      <a href="https://t.me/+D2UvZvG8_bM1OGI1" class="btn btn--stripe">
+        Join Cricket Ka Sabse Bada Tipper <i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+    </div>
+    <div class="content-wrapper">
+      <div class="points">
+        <ul>
+          <li><i class="fa-solid fa-share"></i> 34/31 BBL MATCHES PASSED 🏆</li>
+          <li><i class="fa-solid fa-share"></i> 70/68 IPL MATCHES PASSED 🏆</li>
+          <li><i class="fa-solid fa-share"></i> 34/31 WORLD CUP MATCHES PASSED 🏆</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="button">
+      <a href="#" class="btn btn--stripe">
+        SUBSCRIBE FOR FREE <i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+    </div>
+
+  </div>
+ <script>
+   const targetCount = 74028; // Target subscriber count
+  const duration = 10000; // Duration of the counting effect in milliseconds (e.g., 3 seconds)
+  const displayElement = document.getElementById('subscriber-count');
+  
+  let startTimestamp = null;
+  
+  function countUp(timestamp) {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = timestamp - startTimestamp;
+    const currentCount = Math.min(Math.floor((progress / duration) * targetCount), targetCount);
+    
+    // Format the count with a comma for thousands and display it
+    displayElement.textContent = `${currentCount.toLocaleString()} Subscribers`;
+  
+    if (currentCount < targetCount) {
+      requestAnimationFrame(countUp);
+    }
+  }
+    // Start the animation
+    requestAnimationFrame(countUp);
+ </script>
+
+</body>
+</html>
